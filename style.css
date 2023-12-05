@@ -503,4 +503,8 @@ footer .qns {
         margin: 6px 0px;
     }
 
+    .main input,
+    .email input {
+        padding: 4px 34px 4px 10px;
+    }
 }
