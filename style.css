@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    /* outline: none; */
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.main {
+    background-image: url('Assets/Images/background.jpg');
+    background-position: center, center;
+    /* background-size: max(2100px, 100vw); */
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    width: 100%;
+    height: 100%;
+    opacity: 0.68;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+}
+
+nav .logo {
+    width: 147px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    height: calc(100% - 68px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    margin: 0px 28px;
+    gap: 26px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 0px 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(23, 23, 23, 0);
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: rgb(229, 9, 20);
+}
+
+.btn-eng {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-red {
+    background-color: rgb(229, 9, 20);
+    padding: 9px 30px 6px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.main input {
+    padding: 8px 75px 8px 10px;
+    color: rgb(172, 169, 169);
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seperation {
+    height: 10px;
+    background-color: rgb(35, 35, 35);
+}
+
+section {
+    height: 60vh;
+}
+
+.first,
+.second,
+.third,
+.forth {
+    display: flex;
+    margin: auto 100px;
+    color: white;
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    max-width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 4vw;
+    left: 4vw;
+    width: 22vw;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+}
+
+.para> :first-child {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.para> :nth-child(2) {
+    font-size: 24px;
+}
+
+.third .secimg video {
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    width: 19vw;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 155px;
+    color: white;
+    text-align: center;
+    height: auto;
+}
+
+.faq h2 {
+    font-size: 48px;
+}
+
+.faqbox {
+    background-color: rgb(45, 45, 45);
+    height: 80px;
+    margin: 5px;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox i {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.faqbox:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(24, 24, 24);
+}
+
+.faqemail {
+    margin-top: 60px;
+}
+
+.email {
+    margin-top: 14px;
+}
+
+.faqemail span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faqemail input {
+    padding: 8px 75px 8px 10px;
+    color: rgb(172, 169, 169);
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+footer {
+    color: white;
+    padding: 10px 160px;
+    height: auto;
+}
+
+footer .qns {
+    margin: 30px 0px;
+    color: rgba(255, 255, 255, 0.600);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.600);
+    font-size: 14px;
+    padding: 6px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bt {
+    left: 0px;
+    margin: 15px 0px;
+    padding: 6px 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255);
+    background-color: rgba(23, 23, 23, 0);
+    border-radius: 4px;
+}
+
+.netflix {
+    color: rgba(255, 255, 255, 0.600);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 950px) {
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .main input,
+    .email input {
+        padding: 4px 75px 4px 10px;
+        font-size: 14px;
+    }
+
+    .btn-red {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    .para> :first-child {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .para> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .faq h2 {
+        font-size: 32px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+    }
+
+    .faqbox i {
+        font-size: 40px;
+    }
+
+    .faqemail span {
+        font-size: 16px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faq {
+        padding: 34px 100px;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    nav {
+        /* max-width: 95vw; */
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 68px;
+    }
+
+    nav .logo {
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 4px 10px;
+        margin: 0px 5px;
+    }
+
+    .hero-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .forth {
+        flex-wrap: wrap;
+    }
+
+    .para {
+        text-align: center;
+    }
+
+    .faq {
+        padding: 34px 32px;
+        align-items: center;
+    }
+
+    .faqbox {
+        width: 90vw;
+    }
+
+    .email {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 10px 60px;
+    }
+
+    footer .qns {
+        margin: 10px 0px;
+    }
+
+    .netflix {
+        margin: 6px 0px;
+    }
+
+    .secimg img {
+        max-width: 55vw;
+        position: relative;
+        z-index: 10;
+    }
+
+    .secimg video {
+        position: absolute;
+        top: 4vw;
+        left: 4vw;
+        width: 47vw;
+    }
+
+    .third .secimg video {
+        position: absolute;
+        top: 3vw;
+        left: 10vw;
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .hero> :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .para> :first-child {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faqbox {
+        font-size: 16px;
+    }
+
+    .faqbox i {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .faqemail span {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav .logo {
+        margin-left: 20px;
+    }
+
+    .hero {
+        margin: auto 14px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .forth {
+        margin: auto 10px;
+    }
+
+    .para {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        padding: 10px 30px;
+    }
+
+    footer .qns {
+        margin: 10px 0px;
+    }
+
+    .netflix {
+        margin: 6px 0px;
+    }
+
+}
